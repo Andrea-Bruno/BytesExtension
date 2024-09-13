@@ -9,6 +9,8 @@
           <Description>Features for handling and working with byte arrays</Description>
           <PackageReadmeFile>README.md</PackageReadmeFile>
           <PackageTags>bytes;array,handle,operations,byte,data,</PackageTags>
+          <PackageProjectUrl></PackageProjectUrl>
+          <RepositoryUrl>https://github.com/Andrea-Bruno/BytesExtension</RepositoryUrl>
 </PropertyGroup>
 
   <ItemGroup>
