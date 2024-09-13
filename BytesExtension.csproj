@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+		<Version>$([System.DateTime]::Now.ToString("1.yy.MM.dd"))</Version>
+          <Version>$([System.DateTime]::Now.ToString("1.yy.MM.dd"))</Version>
+          <Title>Bytes Extension</Title>
+          <Description>Features for handling and working with byte arrays</Description>
+          <PackageReadmeFile>README.md</PackageReadmeFile>
+          <PackageTags>bytes;array,handle,operations,byte,data,</PackageTags>
+</PropertyGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+  </ItemGroup>
+
+  
+  	<Target Name="SetPackageVersion" DependsOnTargets="Build">
+		<PropertyGroup>
+			<!-- <PackageVersion>$([System.DateTime]::Now.ToString(&quot;yyyy.MM.dd.HHmmss&quot;))</PackageVersion> -->
+			<!-- You can customize the format and the rule about how version increases here. -->
+			<PackageVersion>$([System.DateTime]::Now.ToString("1.yy.MM.dd"))</PackageVersion>
+		</PropertyGroup>
+	</Target>  <Target Name="SetPackageVersion" DependsOnTargets="Build">
+    <PropertyGroup>
+      <!-- <PackageVersion>$([System.DateTime]::Now.ToString(&quot;yyyy.MM.dd.HHmmss&quot;))</PackageVersion> -->
+      <!-- You can customize the format and the rule about how version increases here. -->
+      <PackageVersion>$([System.DateTime]::Now.ToString("1.yy.MM.dd"))</PackageVersion>
+    </PropertyGroup>
+  </Target>
+
+</Project>
